@@ -23370,12 +23370,12 @@ DIN A4, landscape with location and doc. field</description>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
-<part name="R9" library="pot" deviceset="TRIM_US-" device="CA6V"/>
+<part name="R9" library="pot" deviceset="TRIM_US-" device="CA6V" value="5K"/>
 <part name="R10" library="pot" deviceset="3RP/1610N" device="" value="100K log - Gain"/>
 <part name="BASS_CUT1" library="solpad" deviceset="MCS08" device=""/>
 <part name="BASS_CUT2" library="solpad" deviceset="MCS08" device=""/>
-<part name="S3_1" library="solpad" deviceset="MCS08" device=""/>
-<part name="S3_2" library="solpad" deviceset="MCS08" device=""/>
+<part name="ULTRA_LOW_1" library="solpad" deviceset="MCS08" device=""/>
+<part name="ULTRA_LOW_2" library="solpad" deviceset="MCS08" device=""/>
 <part name="MUTE_1" library="solpad" deviceset="MCS08" device=""/>
 <part name="MUTE_2" library="solpad" deviceset="MCS08" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
@@ -23413,9 +23413,9 @@ DIN A4, landscape with location and doc. field</description>
 <sheets>
 <sheet>
 <plain>
-<text x="10.16" y="111.76" size="1.778" layer="97">These are the audio inputs going to P10 stereo connectors.</text>
-<wire x1="33.02" y1="109.22" x2="33.02" y2="104.14" width="0.1524" layer="97"/>
-<wire x1="25.4" y1="101.6" x2="25.4" y2="109.22" width="0.1524" layer="97"/>
+<text x="7.62" y="114.3" size="1.778" layer="97">These are the audio inputs going to P10 stereo connectors.</text>
+<wire x1="12.7" y1="81.28" x2="12.7" y2="76.2" width="0.1524" layer="97"/>
+<wire x1="12.7" y1="99.06" x2="12.7" y2="111.76" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="R1" gate="G$1" x="43.18" y="96.52"/>
@@ -23431,7 +23431,10 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="C3" gate="G$1" x="91.44" y="96.52" rot="R90"/>
 <instance part="Q1" gate="G$1" x="73.66" y="73.66"/>
 <instance part="Q2" gate="G$1" x="147.32" y="73.66"/>
-<instance part="Q3" gate="G$1" x="215.9" y="71.12"/>
+<instance part="Q3" gate="G$1" x="215.9" y="71.12" smashed="yes">
+<attribute name="NAME" x="210.82" y="73.533" size="1.778" layer="95"/>
+<attribute name="VALUE" x="210.82" y="76.2" size="1.778" layer="96"/>
+</instance>
 <instance part="C4" gate="G$1" x="93.98" y="78.74" rot="R270"/>
 <instance part="C5" gate="G$1" x="116.84" y="71.12"/>
 <instance part="LOW_IN" gate="G$1" x="22.86" y="96.52" smashed="yes" rot="R90">
@@ -23459,10 +23462,13 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="GND5" gate="1" x="116.84" y="35.56"/>
 <instance part="GND6" gate="1" x="121.92" y="91.44"/>
 <instance part="P+1" gate="VCC" x="81.28" y="104.14"/>
-<instance part="R9" gate="G$1" x="88.9" y="58.42"/>
+<instance part="R9" gate="G$1" x="88.9" y="58.42" smashed="yes">
+<attribute name="NAME" x="91.44" y="63.5" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="93.98" y="63.5" size="1.778" layer="96" rot="R270"/>
+</instance>
 <instance part="R10" gate="G$1" x="127" y="71.12" smashed="yes">
-<attribute name="NAME" x="131.191" y="77.47" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="133.35" y="77.47" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="131.191" y="74.93" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="133.35" y="74.93" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="BASS_CUT1" gate="G$1" x="101.6" y="91.44" smashed="yes" rot="R180">
 <attribute name="NAME" x="103.378" y="89.281" size="1.778" layer="95"/>
@@ -23470,11 +23476,11 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="BASS_CUT2" gate="G$1" x="101.6" y="83.82" smashed="yes">
 <attribute name="NAME" x="103.378" y="83.947" size="1.778" layer="95"/>
 </instance>
-<instance part="S3_1" gate="G$1" x="106.68" y="58.42" smashed="yes" rot="R180">
-<attribute name="NAME" x="97.79" y="56.261" size="1.778" layer="95"/>
+<instance part="ULTRA_LOW_1" gate="G$1" x="106.68" y="58.42" smashed="yes" rot="R180">
+<attribute name="NAME" x="103.759" y="57.15" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="S3_2" gate="G$1" x="106.68" y="50.8" smashed="yes">
-<attribute name="NAME" x="97.79" y="51.181" size="1.778" layer="95"/>
+<instance part="ULTRA_LOW_2" gate="G$1" x="106.68" y="50.8" smashed="yes">
+<attribute name="NAME" x="103.759" y="36.83" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="MUTE_1" gate="G$1" x="134.62" y="63.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="138.43" y="61.341" size="1.778" layer="95"/>
@@ -23498,10 +23504,10 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="C8" gate="G$1" x="187.96" y="83.82" rot="R90"/>
 <instance part="GND10" gate="1" x="182.88" y="43.18"/>
 <instance part="ULTRA_HIGH_2" gate="G$1" x="180.34" y="83.82" smashed="yes" rot="R90">
-<attribute name="NAME" x="178.181" y="102.87" size="1.778" layer="95" rot="R270"/>
+<attribute name="NAME" x="179.959" y="87.63" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="ULTRA_HIGH_1" gate="G$1" x="172.72" y="83.82" smashed="yes" rot="R270">
-<attribute name="NAME" x="173.101" y="102.87" size="1.778" layer="95" rot="R270"/>
+<attribute name="NAME" x="174.879" y="87.63" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="C9" gate="G$1" x="200.66" y="83.82" rot="R90"/>
 <instance part="R15" gate="G$1" x="215.9" y="83.82"/>
@@ -23635,7 +23641,7 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="R8" gate="G$1" pin="2"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="116.84" y1="48.26" x2="116.84" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="S3_2" gate="G$1" pin="MP"/>
+<pinref part="ULTRA_LOW_2" gate="G$1" pin="MP"/>
 <wire x1="116.84" y1="43.18" x2="116.84" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="48.26" x2="106.68" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="43.18" x2="116.84" y2="43.18" width="0.1524" layer="91"/>
@@ -23754,7 +23760,7 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="66.04" x2="116.84" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="S3_1" gate="G$1" pin="MP"/>
+<pinref part="ULTRA_LOW_1" gate="G$1" pin="MP"/>
 <wire x1="116.84" y1="63.5" x2="116.84" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="60.96" x2="106.68" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="63.5" x2="116.84" y2="63.5" width="0.1524" layer="91"/>
@@ -23913,6 +23919,9 @@ DIN A4, landscape with location and doc. field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,130.071,89.431,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
