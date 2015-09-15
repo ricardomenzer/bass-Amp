@@ -23337,7 +23337,11 @@ DIN A4, landscape with location and doc. field</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="1.016" drill="0">
+<clearance class="0" value="0.8128"/>
+</class>
+<class number="1" name="Power" width="1.2192" drill="0">
+<clearance class="1" value="1.016"/>
 </class>
 </classes>
 <parts>
@@ -23345,12 +23349,12 @@ DIN A4, landscape with location and doc. field</description>
 <part name="R2" library="resistor" deviceset="R-US_" device="0204/7" value="68k"/>
 <part name="R3" library="resistor" deviceset="R-US_" device="0204/7" value="1M"/>
 <part name="R4" library="resistor" deviceset="R-US_" device="0204/7" value="10k"/>
-<part name="R5" library="resistor" deviceset="R-US_" device="0204/7" value="1k8"/>
+<part name="R5" library="resistor" deviceset="R-US_" device="0207/10" value="1k8"/>
 <part name="R6" library="resistor" deviceset="R-US_" device="0204/7" value="2M2"/>
 <part name="R7" library="resistor" deviceset="R-US_" device="0204/7" value="22k"/>
 <part name="R8" library="resistor" deviceset="R-US_" device="0204/7" value="2M2"/>
 <part name="C1" library="resistor" deviceset="C-US" device="050-035X075" value="470n"/>
-<part name="C2" library="resistor" deviceset="CPOL-US" device="E3.5-8" value="220u"/>
+<part name="C2" library="resistor" deviceset="CPOL-US" device="E5-8.5" value="220u"/>
 <part name="C3" library="resistor" deviceset="CPOL-US" device="E2.5-6" value="4u7"/>
 <part name="Q1" library="transistor-fet" deviceset="BF245" device=""/>
 <part name="Q2" library="transistor-fet" deviceset="BF245" device=""/>
@@ -23581,9 +23585,9 @@ DIN A4, landscape with location and doc. field</description>
 <net name="N$4" class="0">
 <segment>
 <pinref part="Q1" gate="G$1" pin="S"/>
-<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="71.12" x2="81.28" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="71.12" x2="81.28" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="71.12" x2="81.28" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="E"/>
 <wire x1="88.9" y1="66.04" x2="88.9" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="71.12" x2="81.28" y2="71.12" width="0.1524" layer="91"/>
@@ -23614,7 +23618,7 @@ DIN A4, landscape with location and doc. field</description>
 <junction x="35.56" y="71.12"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="HIGH_RET" gate="G$1" pin="MP"/>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -23653,8 +23657,8 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="66.04" y1="48.26" x2="66.04" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="48.26" x2="81.28" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="58.42" x2="81.28" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="-"/>
 <wire x1="81.28" y1="38.1" x2="88.9" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="38.1" x2="88.9" y2="40.64" width="0.1524" layer="91"/>
@@ -23767,7 +23771,7 @@ DIN A4, landscape with location and doc. field</description>
 <junction x="116.84" y="63.5"/>
 </segment>
 </net>
-<net name="VCC" class="0">
+<net name="VCC" class="1">
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
