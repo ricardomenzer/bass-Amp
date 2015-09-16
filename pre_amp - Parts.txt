@@ -1,0 +1,61 @@
+Partlist
+
+Exported from pre_amp.sch at 12/09/2015 00:15:36
+
+EAGLE Version 7.2.0 Copyright (c) 1988-2014 CadSoft
+
+Assembly variant: 
+
+Part         Value           Device          Package      Library        Sheet
+
+BASS_CUT1    MCS08           MCS08           MCS08        solpad         1
+BASS_CUT2    MCS08           MCS08           MCS08        solpad         1
+C1           470n            C-US050-035X075 C050-035X075 resistor       1
+C2           220u            CPOL-USE3.5-8   E3,5-8       resistor       1
+C3           4u7             CPOL-USE2.5-6   E2,5-6       resistor       1
+C4           6n8             C-US375-203X418 C375-203X418 rcl            1
+C5           10n             C-US050-030X075 C050-030X075 rcl            1
+C6           220u            CPOL-USE3.5-8   E3,5-8       resistor       1
+C7           1u              CPOL-USE2.5-6   E2,5-6       rcl            1
+C8           330p            C-US375-203X418 C375-203X418 rcl            1
+C9           100n            C-US075-042X103 C075-042X103 rcl            1
+C10          22u             CPOL-USE2-5     E2-5         rcl            1
+C11          100u            CPOL-USE3.5-10  E3,5-10      rcl            1
+C12          100n            C-US075-042X103 C075-042X103 rcl            1
+GND          MCS08           MCS08           MCS08        solpad         1
+HIGH_GND     MCS08           MCS08           MCS08        solpad         1
+HIGH_IN      MCS08           MCS08           MCS08        solpad         1
+HIGH_RET     MCS08           MCS08           MCS08        solpad         1
+LOW_GND      MCS08           MCS08           MCS08        solpad         1
+LOW_IN       MCS08           MCS08           MCS08        solpad         1
+LOW_RET      MCS08           MCS08           MCS08        solpad         1
+MUTE_1       MCS08           MCS08           MCS08        solpad         1
+MUTE_2       MCS08           MCS08           MCS08        solpad         1
+OUT_GND      MCS08           MCS08           MCS08        solpad         1
+OUT_P        MCS08           MCS08           MCS08        solpad         1
+Q1           BF245           BF245           TO92         transistor-fet 1
+Q2           BF245           BF245           TO92         transistor-fet 1
+Q3           BF245           BF245           TO92         transistor-fet 1
+R1           68k             R-US_0204/7     0204/7       resistor       1
+R2           68k             R-US_0204/7     0204/7       resistor       1
+R3           1M              R-US_0204/7     0204/7       resistor       1
+R4           10k             R-US_0204/7     0204/7       resistor       1
+R5           1k8             R-US_0204/7     0204/7       resistor       1
+R6           2M2             R-US_0204/7     0204/7       resistor       1
+R7           22k             R-US_0204/7     0204/7       resistor       1
+R8           2M2             R-US_0204/7     0204/7       resistor       1
+R9           5K              TRIM_US-CA6V    CA6V         pot            1
+R10          100K log - Gain 3RP/1610N       3RP/1610N    pot            1
+R11          4k7             R-US_0204/7     0204/7       resistor       1
+R12          2k7             R-US_0204/7     0204/7       resistor       1
+R13          2M2             R-US_0204/7     0204/7       resistor       1
+R14          1M Log - Vol    3RP/1610N       3RP/1610N    pot            1
+R15          3M3             R-US_0204/7     0204/7       resistor       1
+R16          1M              R-US_0204/7     0204/7       resistor       1
+R17          4K7             R-US_0204/7     0204/7       resistor       1
+R18          220K            R-US_0204/7     0204/7       resistor       1
+ULTRA_HIGH_1 MCS08           MCS08           MCS08        solpad         1
+ULTRA_HIGH_2 MCS08           MCS08           MCS08        solpad         1
+ULTRA_LOW_1  MCS08           MCS08           MCS08        solpad         1
+ULTRA_LOW_2  MCS08           MCS08           MCS08        solpad         1
+VCC          MCS08           MCS08           MCS08        solpad         1
